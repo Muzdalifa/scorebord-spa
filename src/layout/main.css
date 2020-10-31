@@ -1,0 +1,14 @@
+.header{
+  height: 100px;
+  background-color: #f5222d;
+}
+
+.body{
+  min-height:400px;
+  background-color:  #fff1f0;
+}
+
+.footer{
+  height: 50px;
+  background-color: #5c0011;
+}
