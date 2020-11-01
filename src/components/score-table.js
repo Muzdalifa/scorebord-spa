@@ -8,8 +8,8 @@ const row = (record, index, records, setRecords) =>{
     <td id='win'>{record.win}</td>
     <td id='loose'>{record.loose}</td>
     <td>{index + 1}</td>
-    <td><button onClick={ ()=> setRecords( addWin(records,index) )}>+</button></td>
-    <td><button>-</button></td>
+    <td><button onClick={ ()=> setRecords( addPoints(records,index) )}>+</button></td>
+    <td><button onClick={ ()=> setRecords( decreasePoints(records, index)) }>-</button></td>
     <td><button onClick={ ()=> setRecords( deletePlayer( records, index ) )}>x</button></td>   
   </tr>
 }
@@ -51,14 +51,19 @@ const deletePlayer = (records, index)=>{
 
 }
 
-const addWin=(records, index)=>{
+const addPoints = (records, index)=>{
 
   records[index].win = Number(records[index].win) + 1;
-  console.log(records[index]);
+  //console.log(records[index]);
   return [...records];
 
 }
 
+const decreasePoints = (records, index) =>{
+
+  records[index].loose = Number(records[index].loose) + 1;
+  return [...records]
+}
 
 const ScoreTable = () =>{
 
