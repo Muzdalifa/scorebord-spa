@@ -8,9 +8,9 @@ const row = (record, index, records, setRecords) =>{
     <td id='win'>{record.win}</td>
     <td id='loose'>{record.loose}</td>
     <td>{index + 1}</td>
-    <td><button onClick={ ()=> setRecords( addPoints(records,index) )}>+</button></td>
-    <td><button onClick={ ()=> setRecords( decreasePoints(records, index)) }>-</button></td>
-    <td><button onClick={ ()=> setRecords( deletePlayer( records, index ) )}>x</button></td>   
+    <td><button className='table-btn' onClick={ ()=> setRecords( addPoints(records,index) )}>+</button></td>
+    <td><button className='table-btn' onClick={ ()=> setRecords( decreasePoints(records, index)) }>-</button></td>
+    <td><button className='table-btn' onClick={ ()=> setRecords( deletePlayer( records, index ) )}>x</button></td>   
   </tr>
 }
 
@@ -39,6 +39,10 @@ const addPlayer = (records)=>{
   }
 
   records.push(newPlayer);
+
+  //clear input box
+  document.getElementById('playerName').value = '';
+
   return [...records]; //spread array: create new array object with new records(update array)
   
 }
@@ -70,8 +74,8 @@ const ScoreTable = () =>{
   const [records, setRecords] = useState([]);
 
   return <div>
-    <div>
-      <input  type='text' id='playerName' placeholder='Enter Name'/>
+    <div className='add-player'>
+      <input  type='text' id='playerName' placeholder='Enter Name' />
       <button className='add-button' onClick={ ()=> setRecords( addPlayer(records) ) }>Add</button>
     </div>
 

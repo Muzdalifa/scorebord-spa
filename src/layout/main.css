@@ -1,14 +1,21 @@
+.all{
+  color: white;
+
+}
+
 .header{
   height: 100px;
-  background-color: #f5222d;
+  background-color: #08979c;
 }
 
 .body{
   min-height:400px;
-  background-color:  #fff1f0;
+  background-color:  white;
+  color: #00474f;
+  margin: 16px 272px;
 }
 
 .footer{
   height: 50px;
-  background-color: #5c0011;
+  background-color: #00474f;
 }
