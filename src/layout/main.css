@@ -20,4 +20,10 @@
 .footer{
   height: 50px;
   background-color: #00474f;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+a{
+  color: white !important;
 }

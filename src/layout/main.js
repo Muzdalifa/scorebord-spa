@@ -1,6 +1,7 @@
 import React from 'react';
 import ScoreTable from '../components/score-table';
 import Header from '../components/header';
+import Footer from '../components/footer';
 import './main.css';
 
 const Main = () =>{
@@ -15,7 +16,7 @@ const Main = () =>{
     </div>
 
     <div className='footer'>
-
+      <Footer />
     </div>
   </div>
 }
