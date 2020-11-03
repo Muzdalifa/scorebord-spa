@@ -4,8 +4,10 @@
 }
 
 .header{
-  height: 100px;
+  padding-top: 16px;
   background-color: #08979c;
+  display: flex;
+  justify-content: center;
 }
 
 .body{

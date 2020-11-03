@@ -7,9 +7,9 @@
   display: flex;
 }
 .table-btn{
-  background-color: #08979c;
-  border-color: white;
   font-size: large;
+  font-weight: 800;
+  color: #00474f !important; 
 }
 #playerName{
   border-color: #00474f;
