@@ -12,9 +12,11 @@
 
 .body{
   min-height:400px;
+  min-width: 360px;
+  max-width: 1000px;
   background-color:  white;
   color: #00474f;
-  margin: 16px 272px;
+  margin: 16px auto;
 }
 
 .footer{
