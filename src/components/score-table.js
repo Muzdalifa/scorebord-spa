@@ -8,9 +8,9 @@ const row = (record, index, records, setRecords) =>{
     <td id='win'>{record.win}</td>
     <td id='loose'>{record.loose}</td>
     <td>{index + 1}</td>
-    <td><button className='table-btn button-clear' onClick={ ()=> setRecords( addPoints(records,index) )}>+</button></td>
-    <td><button className='table-btn button-clear' onClick={ ()=> setRecords( decreasePoints(records, index)) }>-</button></td>
-    <td><button className='table-btn button-clear' onClick={ ()=> setRecords( deletePlayer( records, index ) )}>x</button></td>   
+    <td><button className='table-btn button-clear' onClick={ ()=> setRecords( addPoints(records,index) )}>&#8679;</button></td>
+    <td><button className='table-btn button-clear' onClick={ ()=> setRecords( decreasePoints(records, index)) }>&#8681;</button></td>
+    <td><button className='table-btn button-clear' onClick={ ()=> setRecords( deletePlayer( records, index ) )}>&#10006;</button></td>   
   </tr>
 }
 
